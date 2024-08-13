@@ -141,6 +141,76 @@
   font-weight: 600;
 }
 
+/* 사이트 맵 */
+.site-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.site-map .main-logo2 a {
+  width: 170px;
+  height: 26px;
+  background: url(../img/main_logo2.png) no-repeat center;
+}
+
+.site-map .menu-wrap:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.site-map .menu-wrap .title {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.site-map .menu-wrap .title:hover {
+  color: #B5121B;
+}
+
+.site-map .menu-wrap .title::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: url(../img/arrow_d.svg) no-repeat;
+}
+
+.site-map .menu-wrap .title:hover::after {
+  display: block;
+}
+
+.site-map .menu-wrap .title:hover::after {
+  background: url(../img/arrow_d_red.svg) no-repeat;
+}
+
+.site-map li .drop-menu {
+  display: none;
+}
+
+.site-map li .drop-menu a {
+  display: block;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.site-map li .drop-menu a:hover {
+  color: #B5121B;
+}
+
 /* 섹션 공통 스타일 */
 .section {
   height: 100vh;
@@ -726,7 +796,7 @@
 }
 
 #footer .container .footer-bot {
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 #footer .container .footer-bot .footer-nav {
@@ -795,39 +865,53 @@
   gap: 8px;
 }
 
-
-
-
-
-
-
-
 /* 사이드 버튼 */
 
 .side-btn  {
   position: fixed; 
-  bottom: 60px;
-  right: 60px;
+  bottom: 50px;
+  right: 50px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   z-index: 1000;
-  display: none;
 }
 .side-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 68px;
   height: 68px;
   background-color: #B5121B;
   border-radius: 50%;
 }
 
-.side-btn .top-btn {
+.side-btn a span {
+  color: #fff;
   display: none;
-  background: #B5121B url(../img/arrow_up.svg) no-repeat center / 40px 40px;
+}
+
+
+.side-btn a:hover {
+  background-color: #D91226;
+}
+
+.side-btn a:hover span {
+  display: block;
+}
+
+.side-btn .top-btn {
+  background: #B5121B url(../img/top_btn.svg) no-repeat center / 40px 40px;
 }
 
 .side-btn .top-btn:hover {
-  background: #D91226 url(../img/arrow_hover_up.svg) no-repeat center/ 40px 40px;
+  background: none;
+  background-color: #D91226;
+}
+
+.side-btn .top-btn span {
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
 .side-btn .require-btn {
@@ -835,7 +919,8 @@
 }
 
 .side-btn .require-btn:hover {
-  background: #D91226 url(../img/require_hover_btn.svg) no-repeat center;
+  background: none;
+  background-color: #D91226;
 }
 
 

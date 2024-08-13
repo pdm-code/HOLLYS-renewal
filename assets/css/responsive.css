@@ -120,6 +120,30 @@
   .visual4 .container .visual-bot img {
     width: 100%;
   }
+
+  .side-btn {
+    bottom: 120px;
+    right: 30px;
+  }
+
+  .side-btn a {
+    width: 56px;
+    height: 56px;
+  }
+
+  .side-btn .top-btn {
+    background-size: 34px;
+  }
+
+  .side-btn .top-btn span {
+    font-size: 18px;
+  }
+
+  .side-btn .require-btn {
+    background-size: 42px;
+    font-size: 14px;
+  }
+  
 }
 
 /* 0 ~ 768px */
@@ -413,9 +437,18 @@
     font-size: 16px;
   }
 
+  .visual6 .container .visual-bot .notice-wrap .notice .conts a {
+    font-size: 16px;
+  }
+
+  .visual6 .container .visual-bot .notice-wrap .notice .conts span {
+    font-size: 14px;
+  }
+
   #footer .container span {
     font-size: 13px;
   }
+  
 
 
 

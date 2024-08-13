@@ -5,56 +5,56 @@ $(document).ready(function(){
   $("#header .container .nav .menu").mouseenter(function(){
     $("#header .container .nav li .menu-wrap").stop();
     $("#header .container .nav li .menu-wrap").slideDown();
-  })
+  });
 
   $("#header .container .nav .menu").mouseleave(function(){
     $("#header .container .nav li .menu-wrap").stop();
     $("#header .container .nav li .menu-wrap").slideUp();
-  })
+  });
 
   // mall-wrap
   $("#header .container .nav .mall").mouseenter(function(){
     $("#header .container .nav li .mall-wrap").stop();
     $("#header .container .nav li .mall-wrap").slideDown();
-  })
+  });
 
   $("#header .container .nav .mall").mouseleave(function(){
     $("#header .container .nav li .mall-wrap").stop();
     $("#header .container .nav li .mall-wrap").slideUp();
-  })
+  });
 
   // membership-wrap
   $("#header .container .nav .membership").mouseenter(function(){
     $("#header .container .nav li .membership-wrap").stop();
     $("#header .container .nav li .membership-wrap").slideDown();
-  })
+  });
 
   $("#header .container .nav .membership").mouseleave(function(){
     $("#header .container .nav li .membership-wrap").stop();
     $("#header .container .nav li .membership-wrap").slideUp();
-  })
+  });
 
   // news-wrap
   $("#header .container .nav .news").mouseenter(function(){
     $("#header .container .nav li .news-wrap").stop();
     $("#header .container .nav li .news-wrap").slideDown();
-  })
+  });
 
   $("#header .container .nav .news").mouseleave(function(){
     $("#header .container .nav li .news-wrap").stop();
     $("#header .container .nav li .news-wrap").slideUp();
-  })
+  });
 
   // hollys-wrap
   $("#header .container .nav .hollys").mouseenter(function(){
     $("#header .container .nav li .hollys-wrap").stop();
     $("#header .container .nav li .hollys-wrap").slideDown();
-  })
+  });
 
   $("#header .container .nav .hollys").mouseleave(function(){
     $("#header .container .nav li .hollys-wrap").stop();
     $("#header .container .nav li .hollys-wrap").slideUp();
-  })
+  });
 
   // 헤더 아이콘 이미지 변환
   $(".sign-wrap .sign-in").mouseenter(function(){
@@ -72,6 +72,67 @@ $(document).ready(function(){
   $(".sign-wrap .sign-up").mouseleave(function(){
     $(".sign-wrap .sign-up img").attr("src","assets/img/sign_up.svg")
   });
+
+  // 사이트맵 
+  // var menuWrap = $(".site-map .menu-wrap .title")
+
+  // menuWrap.on("click",function(){
+  //   $(this).addClass("active");
+  //   menuWrap.not($(this)).removeClass("active");
+
+  //   if(menuWrap.hasClass("active")) {
+  //     $(".site-map .menu .drop-menu").slideDown();
+  //   } else {
+  //     $(".site-map .menu .drop-menu").hide();
+  //   }
+
+  // });
+
+  // $(".site-map .menu .title").on("click",function(){
+  //   $(this).toggleClass("active");
+
+  //   if($(this).hasClass("active")) {
+  //     $(".site-map .menu .drop-menu").slideDown();
+  //   } else {
+  //     $(".site-map .menu .drop-menu").slideUp();
+  //   }
+  // });
+  // $(".site-map .mall .title").on("click",function(){
+  //   $(this).toggleClass("active");
+
+  //   if($(this).hasClass("active")) {
+  //     $(".site-map .mall .drop-menu").slideDown();
+  //   } else {
+  //     $(".site-map .mall .drop-menu").slideUp();
+  //   }
+  // });
+  // $(".site-map .membership .title").on("click",function(){
+  //   $(this).toggleClass("active");
+
+  //   if($(this).hasClass("active")) {
+  //     $(".site-map .membership .drop-menu").slideDown();
+  //   } else {
+  //     $(".site-map .membership .drop-menu").slideUp();
+  //   }
+  // });
+  // $(".site-map .news .title").on("click",function(){
+  //   $(this).toggleClass("active");
+
+  //   if($(this).hasClass("active")) {
+  //     $(".site-map .news .drop-menu").slideDown();
+  //   } else {
+  //     $(".site-map .news .drop-menu").slideUp();
+  //   }
+  // });
+  // $(".site-map .hollys .title").on("click",function(){
+  //   $(this).toggleClass("active");
+
+  //   if($(this).hasClass("active")) {
+  //     $(".site-map .hollys .drop-menu").slideDown();
+  //   } else {
+  //     $(".site-map .hollys .drop-menu").slideUp();
+  //   }
+  // });
 
   // 섹션 비쥬얼2 nav 텍스트 변환 
   var a = $(".visual2 .container .visual-bot .nav-menu a");
