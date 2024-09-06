@@ -74,65 +74,61 @@ $(document).ready(function(){
   });
 
   // 사이트맵 
-  // var menuWrap = $(".site-map .menu-wrap .title")
+  $(".site-map .menu .title").on("click",function(){
+    $(this).toggleClass("active");
+    if($(this).hasClass("active")) {
+      $(".site-map .menu .drop-menu").slideDown();
+    } else {
+      $(".site-map .menu .drop-menu").slideUp();
+    }
+  });
+  $(".site-map .mall .title").on("click",function(){
+    $(this).toggleClass("active");
+    if($(this).hasClass("active")) {
+      $(".site-map .mall .drop-menu").slideDown();
+    } else {
+      $(".site-map .mall .drop-menu").slideUp();
+    }
+  });
+  $(".site-map .membership .title").on("click",function(){
+    $(this).toggleClass("active");
+    if($(this).hasClass("active")) {
+      $(".site-map .membership .drop-menu").slideDown();
+    } else {
+      $(".site-map .membership .drop-menu").slideUp();
+    }
+  });
+  $(".site-map .news .title").on("click",function(){
+    $(this).toggleClass("active");
+    if($(this).hasClass("active")) {
+      $(".site-map .news .drop-menu").slideDown();
+    } else {
+      $(".site-map .news .drop-menu").slideUp();
+    }
+  });
+  $(".site-map .hollys .title").on("click",function(){
+    $(this).toggleClass("active");
+    if($(this).hasClass("active")) {
+      $(".site-map .hollys .drop-menu").slideDown();
+    } else {
+      $(".site-map .hollys .drop-menu").slideUp();
+    }
+  });
 
-  // menuWrap.on("click",function(){
-  //   $(this).addClass("active");
-  //   menuWrap.not($(this)).removeClass("active");
+  $("#header .container .menu-bar").on("click",function(){
+    $(".site-map").addClass("active");
+    $(".background").addClass("active");
 
-  //   if(menuWrap.hasClass("active")) {
-  //     $(".site-map .menu .drop-menu").slideDown();
-  //   } else {
-  //     $(".site-map .menu .drop-menu").hide();
-  //   }
+    $('html, body').css({'overflow': 'hidden'});
 
-  // });
+  });
 
-  // $(".site-map .menu .title").on("click",function(){
-  //   $(this).toggleClass("active");
+  $(".site-map .close-btn").on("click",function(){
+    $(".site-map").removeClass("active");
+    $(".background").removeClass("active");
+    $('html, body').css({'overflow': 'visible'});
+  });
 
-  //   if($(this).hasClass("active")) {
-  //     $(".site-map .menu .drop-menu").slideDown();
-  //   } else {
-  //     $(".site-map .menu .drop-menu").slideUp();
-  //   }
-  // });
-  // $(".site-map .mall .title").on("click",function(){
-  //   $(this).toggleClass("active");
-
-  //   if($(this).hasClass("active")) {
-  //     $(".site-map .mall .drop-menu").slideDown();
-  //   } else {
-  //     $(".site-map .mall .drop-menu").slideUp();
-  //   }
-  // });
-  // $(".site-map .membership .title").on("click",function(){
-  //   $(this).toggleClass("active");
-
-  //   if($(this).hasClass("active")) {
-  //     $(".site-map .membership .drop-menu").slideDown();
-  //   } else {
-  //     $(".site-map .membership .drop-menu").slideUp();
-  //   }
-  // });
-  // $(".site-map .news .title").on("click",function(){
-  //   $(this).toggleClass("active");
-
-  //   if($(this).hasClass("active")) {
-  //     $(".site-map .news .drop-menu").slideDown();
-  //   } else {
-  //     $(".site-map .news .drop-menu").slideUp();
-  //   }
-  // });
-  // $(".site-map .hollys .title").on("click",function(){
-  //   $(this).toggleClass("active");
-
-  //   if($(this).hasClass("active")) {
-  //     $(".site-map .hollys .drop-menu").slideDown();
-  //   } else {
-  //     $(".site-map .hollys .drop-menu").slideUp();
-  //   }
-  // });
 
   // 섹션 비쥬얼2 nav 텍스트 변환 
   var a = $(".visual2 .container .visual-bot .nav-menu a");
